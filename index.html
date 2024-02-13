@@ -12,7 +12,9 @@
   <body>
     <head>
       <nav id="desktop-nav">
-        <div class="logo">Phuong Nguyen</div>
+        <div class="logo">
+          Phuong Nguyen
+        </div>
         <div>
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -21,9 +23,23 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+          <em>Enable Dark Mode!</em>
+        </div>
       </nav>
       <nav id="hamburger-nav">
         <div class="logo">Phuong Nguyen</div>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+          <em>Enable Dark Mode!</em>
+        </div>
         <div class="hamburger-menu">
           <div class="hamburger-icon"  onclick="toggleMenu()">
             <span></span>
@@ -38,6 +54,7 @@
           </div>
         </div>
       </nav>
+      
     </head>
     <section id="profile">
       <div class="section__pic-container">
@@ -48,19 +65,286 @@
         <h1 id="title">Phuong Nguyen</h1>
         <p class="section__text__p2">PhD Student</p>
         <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+          <button class="btn btn-color-2" onclick="window.open('./assets/Phuong_resume.pdf')">Download CV</button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
         </div>
         <div class="social-container">
-          <img src="./assets/github.png" class="icon" alt="">
-          <img src="./assets/linkedin.png" class="icon" alt="">
+          <img src="./assets/github.png" class="icon" alt="" href="https://github.com/thanhphuong163">
+          <img src="./assets/linkedin.png" class="icon" alt="" href="https://www.linkedin.com/in/phuong-nguyen-347714154/">
         </div>
       </div>
     </section>
-    <section id="about"></section>
-    <section id="experience"></section>
-    <section id="blogs"></section>
-    <section id="contact"></section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/g_day_1.jpg" alt="">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img class="icon" src="./assets/experience.png" alt="Experience icon">
+              <h3>Experience</h3>
+              <p>1 year<br/>Data Scientist, ZaloPay</p>
+            </div>
+            <div class="details-container">
+              <img class="icon" src="./assets/education.png" alt="Education icon">
+              <h3>Education</h3>
+              <p>CS Engineering Bachelor Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Self-motivated, diligent, and passionate Ph.D. candidate with 4.5 years of combined academic and industrial experience, seeking a Machine Learning Engineer position to apply my strong mathematical and programming skills in developing innovative solutions that optimize business processes and enhance customer experience.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img class="icon arrow" src="./assets/arrow.png" alt="Arrow icon" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Machine Learning</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pytorch</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Numpy</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pandas</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Scikit-learn</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Matplotlib</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tensorflow</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C/C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Rust</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Julia</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#blogs'"
+      />
+    </section>
+    <section id="blogs">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Blogs</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/linear_regression_logo.png"
+                alt="Post 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Linear Regression</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='./blog_1.html'"
+              >
+                Read More
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Post 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">A Street Photography Day in Saigon</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Read More
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Post 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Visual Studio Code Tips and Tricks</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Read More
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:thanhphuong.its@gmail.com">thanhphuong.its@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/phuong-nguyen-347714154/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -75,5 +359,6 @@
       <p>Copyright &#169; 2024 Phuong Nguyen. All Rights Reserved.</p>
     </footer>
     <script src="js/scripts.js"></script>
+    </script>
   </body>
 </html>

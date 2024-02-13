@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+  </head>
+  <body>
+    <head>
+      <nav id="desktop-nav">
+        <div class="logo">Phuong Nguyen</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#experience">Experience</a></li>
+            <li><a href="./index.html#blogs">Blogs</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Phuong Nguyen</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon"  onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="./index.html#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="./index.html#blogs" onclick="toggleMenu()">Blogs</a></li>
+            <li><a href="./index.html#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+    </head>
+    <section id="blog-post">
+      <div class="blog-container">
+        <div class="post-header">
+          <h1 class="title">Support Vector Machine</h1>
+          <h3>Author: Phuong Nguyen</h3>
+          <p>Posted Date: Feb 12, 2024</p>
+        </div>
+        <div class="blog-pic">
+          <img src="./assets/svm_logo.png" alt="SVM">
+        </div>
+        <div class="blog-body">
+          <p>
+            Support vector machines (SVMs) are a set of supervised learning methods used for classification, regression and outliers detection.
+          </p>
+          <p>
+            The advantages of support vector machines are:
+          </p>
+          <ul class="blog-content-unorder-list">
+            <li>Effective in high dimensional spaces.
+            </li>
+            <li>Still effective in cases where number of dimensions is greater than the number of samples.
+            </li>
+            <li>Uses a subset of training points in the decision function (called support vectors), so it is also memory efficient.
+            </li>
+            <li>Versatile: different Kernel functions can be specified for the decision function. Common kernels are provided, but it is also possible to specify custom kernels.
+            </li>
+          </ul>
+          <p>The disadvantages of support vector machines include:</p>
+          <ul class="blog-content-unorder-list">
+            <li>If the number of features is much greater than the number of samples, avoid over-fitting in choosing Kernel functions and regularization term is crucial.
+            </li>
+            <li>SVMs do not directly provide probability estimates, these are calculated using an expensive five-fold cross-validation (see Scores and probabilities, below).</li>
+          </ul>
+          <p>You can learn more the theory of SVM for this video lecture on Youtube</p>
+          <div class="blog-video-container">
+            <iframe src="https://www.youtube.com/embed/_PwhiWxHK8o" title="16. Learning: Support Vector Machines" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="blog-footer">
+            
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#experience">Experience</a></li>
+            <li><a href="./index.html#blogs">Blogs</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Phuong Nguyen. All Rights Reserved.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

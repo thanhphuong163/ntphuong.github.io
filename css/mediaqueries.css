@@ -38,13 +38,31 @@
     margin: 0 5%;
   }
   .section__pic-container {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 2rem;
+  }
+
+  .blog-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: auto;
+  }
+
+  .blog-pic img {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
   }
+
+  /* .blog-video-container {
+    height: auto;
+  } */
+
   .about-containers {
     margin-top: 0;
   }
+  
 }
 
 @media screen and (max-width: 600px) {

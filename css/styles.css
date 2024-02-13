@@ -11,6 +11,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+body head {
+  display: flex;
+  align-items: baseline;
+}
+
 html {
   scroll-behavior: smooth;
 }
